@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html>
-  </head>
+  <head>
     <title>BrandingTech</title>
-  <style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
     h1{
-      font-size: 45px;
-      font-family:Roboto;
-      color: rgb(70, 200, 250);
       text-align: center;
+      margin-top: -2px;
     }
-    h2{
-      font-size: 35px;
-      font-family:Roboto;
-      color: rgb(250, 50, 100);
-      text-align: center;
-    }
-    p{
-      font-size: 25px;
-      font-family:Roboto;
-      color: rgb(0, 0, 0);
-    }
+    h2{  text-align: center;}
     #banner{
-      width:100%; 
-      height: 300px;
-      object-fit: cover;
+      width: 100%;
+      object-fit:cover;
     }
     #aboutus{
-      width:100%; 
-      height: 300px;
-      object-fit: cover;
+      width: 100%;
+      object-fit:cover;
     }
-    #container{ 
-      max-width: 720px;
-      margin:0 auto 0 auto;  /*0 for top, auto for left, 0 for buttom and auto for right*/      
-              }
-    .bodytext {
-      font-family:caption;
-      font-size:15px;
-      color: rgb(50,50,50);
+    #footerlog{
+      
+      object-fit:cover;
     }
-  </style>
+      
+    </style>
+  </head>
   
   <body>
-    <div id="container">  
-     <h1> <img src="https://personal-web2-python-1--brandingtechmy.repl.co/static/logo.gif" width="120" height="120"alt="BrandingTch">
+    <div class="container">  
+     <h1 class=" m -auto"> <img src="https://personal-web2-python-1--brandingtechmy.repl.co/static/logo.gif" width="120" height="120"alt="BrandingTch">
      <br>BrandingTech</br>
      </h1> 
-      <img id="banner" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/banner.jpeg">
-      <h2>About US</h2>
-      <P> At <strong>BrandingTech</strong>, we're not just another marketing and technology company. We are the architects of your brand's success, the storytellers of your vision, and the innovators of your digital future. We offer a full spectrum of services designed to elevate your brand, engage your audience, and drive results.
-      </P> <img id="aboutus" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/aboutus.jpeg">
-      <h2>Something you want</h2>
-      <button>Contact Us</button>
-      <button>About us</button>
-      <button>Services</button>
-      <button>Learn more</button>
-      <p class="bodytext" style="text-align:center"> Copyrihgt 2023, BrandingTech</p>
+    <img class="img-fluid" id="banner" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/banner.jpeg">
+      <h2 class="m-2">About US</h2>
+      <P class="lead"> At <strong>BrandingTech</strong>, we're not just another marketing and technology company. We are the architects of your brand's success, the storytellers of your vision, and the innovators of your digital future. We offer a full spectrum of services designed to elevate your brand, engage your audience, and drive results.
+      </P> 
+      <img class="img-fluid" id="aboutus" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/aboutus.jpeg">
+      <h2 class="m-2">Services</h2>
+      
     </div>  
   </body>
+
+  <footer>
+     <div>
+       <img class="img-fluid" id="footerlogo" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/logo.gif" width="120" height="120"alt="BrandingTch">
+        <br>BrandingTech</br>
+     </div>
+    <div>
+      <button class ="btn btn-outline-primary">Contact Us</button>
+      <button class ="btn btn-outline-secondary">About us</button>
+      <button class ="btn btn-outline-warning">Services</button>
+      <button class ="btn btn-outline-info">Learn more</button>
+    </div>
+    <p class="text-center m-2"> Copyrihgt 2023, BrandingTech</p>
+  </footer>
+  
 </html>
