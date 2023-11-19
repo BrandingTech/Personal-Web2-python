@@ -3,15 +3,15 @@
     "templates/home.html": [
       {
         "id": "7ef01919-bbcf-4c8f-aa3b-13594733261a",
-        "line": 3,
-        "version": 1508,
-        "index": 23
+        "line": 1,
+        "version": 2239,
+        "index": 0
       },
       {
         "id": "adf1faef-ab8e-456b-9669-1b8508020c1b",
-        "line": 4,
-        "version": 1377,
-        "index": 63
+        "line": 1,
+        "version": 2239,
+        "index": 0
       }
     ]
   }

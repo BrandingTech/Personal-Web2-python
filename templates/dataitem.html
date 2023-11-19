@@ -1,0 +1,20 @@
+<div class="border-bottom row" style="margin-bottom:16px; padding-bottom:8px;">
+  <div class="col-9">
+    <h4 
+      style = "color: rgb(100,120,250);margin-bottom:8px;"> 
+      {{data['title']}}
+    </h4>
+    <div>
+      <b>Point:</b> {{data['point']}} 
+    </div>
+    {% if 'point' in data %}
+    <div>
+      <b>Color:</b> {{data['color']}} 
+    </div>
+    {% endif %}
+  </dive>
+  <div class="col-3">
+    <button type="button" class="btn btn-outline-primary"> more</button>
+  </div>  
+
+</div>

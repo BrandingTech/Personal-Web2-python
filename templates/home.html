@@ -27,6 +27,8 @@
       
     </style>
   </head>
+
+
   
   <body>
     <div class="container">  
@@ -39,10 +41,16 @@
       </P> 
       <img class="img-fluid" id="aboutus" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/aboutus.jpeg">
       <h2 class="m-2">Services</h2>
-      
+      <p>
+        {%for data in data %}
+          {% include 'dataitem.html' %}
+        {% endfor %}
+      </p>
     </div>  
   </body>
 
+
+  
   <footer>
      <div>
        <img class="img-fluid" id="footerlogo" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/logo.gif" width="120" height="120"alt="BrandingTch">
