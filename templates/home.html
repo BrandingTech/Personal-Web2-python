@@ -16,54 +16,41 @@
       width: 100%;
       object-fit:cover;
     }
-    #aboutus{
+    #company{
       width: 100%;
       object-fit:cover;
     }
-    #footerlog{
-      
-      object-fit:cover;
-    }
-      
     </style>
   </head>
-
 
   
   <body>
     {% include 'nav.html' %}
+    {% include 'slides.html' %}
     <div class="container">  
-     <h1 class=" m -auto"> <img src="https://personal-web2-python-1--brandingtechmy.repl.co/static/logo.gif" width="120" height="120"alt="BrandingTch">
-     <br>BrandingTech</br>
-     </h1> 
-    <img class="img-fluid" id="banner" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/banner.jpeg">
-      <h2 class="m-2">About US</h2>
-      <P class="lead"> At <strong>BrandingTech</strong>, we're not just another marketing and technology company. We are the architects of your brand's success, the storytellers of your vision, and the innovators of your digital future. We offer a full spectrum of services designed to elevate your brand, engage your audience, and drive results.
-      </P> 
-      <img class="img-fluid" id="aboutus" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/aboutus.jpeg">
-      <h2 class="m-2">Services</h2>
+      <h1 class=" m -auto"> <img src="https://personal-web2-python-1--brandingtechmy.repl.co/static/logo.gif" width="120" height="120"alt="BrandingTch">
+        <br>BrandingTech</br>
+      </h1> 
+      <div>
+        <img class="img-fluid" id="banner" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/banner.jpeg">
+      </div>
+      <h2 class="m-3">About US</h2>
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
+          <P class="lead"> At <strong>BrandingTech</strong>, we're not just another marketing and technology company. We are the architects of your brand's success, the storytellers of your vision, and the innovators of your digital future. We offer a full spectrum of services designed to elevate your brand, engage your audience, and drive results.
+          </P> 
+        </div>
+        <div class="d-none d-md-block col-md-6">
+          <img class="img-fluid" id="company" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/company.jpeg">
+        </div>
+      </div> 
+      <h2 style= "color:rgb(255,0,0)"class="mt-2 mb-2 ">Services</h2>
       <p>
         {%for data in data %}
           {% include 'dataitem.html' %}
         {% endfor %}
       </p>
-    </div>  
-  </body>
-
-
-  
-  <footer>
-     <div>
-       <img class="img-fluid" id="footerlogo" src="https://personal-web2-python-1--brandingtechmy.repl.co/static/logo.gif" width="120" height="120"alt="BrandingTch">
-        <br>BrandingTech</br>
-     </div>
-    <div>
-      <button class ="btn btn-outline-primary">Contact Us</button>
-      <button class ="btn btn-outline-secondary">About us</button>
-      <button class ="btn btn-outline-warning">Services</button>
-      <button class ="btn btn-outline-info">Learn more</button>
-    </div>
-    <p class="text-center m-2"> Copyrihgt 2023, BrandingTech</p>
-  </footer>
-  
+      {% include 'footer.html' %}
+    </div> 
+  </body>  
 </html>
